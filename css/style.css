@@ -1,0 +1,54 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    display: block;
+    text-align: center;
+    position: absolute;
+    margin-top: 2em;
+    animation-name: roll;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: roll 2s ease-in-out;
+}
+@keyframes roll{
+    0%{
+        transform: translateY(0)
+    }
+    50%{
+        transform: translateY(0px);
+        transform: scale(1.2);
+    }
+    75%{
+        transform: translateY(40px) translateX(20px);
+    }
+    100%{
+        transform: translateY(0px) translateX(0px);
+    }
+}
+h1{
+    margin: 0;
+}
+img{
+    width: 20%;
+}
+#red{
+    background: rgba(255, 0, 0, 0.502);
+}
+#green{
+    background: rgba(0, 255, 0, 0.509);
+}
+#blue{
+    background: rgba(0, 0, 255, 0.502);
+}
